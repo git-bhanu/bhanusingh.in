@@ -7,7 +7,18 @@ export default defineNuxtConfig({
     '@nuxt/eslint',
     '@nuxt/fonts',
     '@nuxt/image',
-    '@nuxt/scripts'
+    '@nuxt/scripts',
+    ['@nuxtjs/google-fonts', {
+      download: true,
+      prefetch: true,
+      families: {
+        'Titillium Web': [ 400 ],
+        'Space Mono': [ 400 ],
+      },
+    }]
   ],
-
+  css: ['~/assets/css/general.scss',
+    '~/assets/css/partials/_colors.scss',
+    '~/assets/css/partials/_typography.scss'
+  ],
 })
