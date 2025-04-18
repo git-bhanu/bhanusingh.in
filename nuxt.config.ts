@@ -7,8 +7,7 @@ export default defineNuxtConfig({
     '@nuxt/eslint',
     '@nuxt/fonts',
     '@nuxt/image',
-    '@nuxt/scripts',
-    '@nuxthq/studio',
+    '@nuxt/scripts'
   ],
 
 })
