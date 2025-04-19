@@ -8,6 +8,7 @@ export default defineNuxtConfig({
     '@nuxt/fonts',
     '@nuxt/image',
     '@nuxt/scripts',
+    '@hypernym/nuxt-gsap',
     ['@nuxtjs/google-fonts', {
       download: true,
       prefetch: true,
@@ -17,8 +18,22 @@ export default defineNuxtConfig({
       },
     }]
   ],
-  css: ['~/assets/css/general.scss',
-    '~/assets/css/partials/_colors.scss',
-    '~/assets/css/partials/_typography.scss'
-  ],
+  vite: {
+    css: {
+      preprocessorOptions: {
+        scss: {
+          additionalData: '@use "~/assets/css/reset.css" as *; @use "~/assets/css/general.scss" as *; @use "~/assets/css/partials/typography.scss" as *; @use "~/assets/css/partials/colors.scss" as *;'
+        }
+      }
+    }
+  },
+  gsap: {
+    composables: true,
+    extraEases: {
+      custom: true,
+    }, extraPlugins: {
+      scrollTrigger: true,
+      observer: true
+    },
+  },
 })

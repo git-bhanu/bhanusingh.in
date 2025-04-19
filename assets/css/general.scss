@@ -1,3 +1,8 @@
-html, body {
-  font-family: 'Titillium Web', sans-serif;
+@use "./partials/typography";
+@use "./partials/colors";
+@use "flexbox";
+
+body {
+  font-family: typography.$font-family-primary;
+  color: colors.$bs-black;
 }
