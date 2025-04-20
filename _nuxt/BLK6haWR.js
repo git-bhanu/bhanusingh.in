@@ -1,1 +1,0 @@
-import{a as t,f as c,k as r,i as a,n as e,O as n,l as _}from"./Dm8qZ2ea.js";const s="hero",i=t({__name:"Hero",setup(l){return(o,d)=>(r(),c("div",{class:e([s,"d--f","ai--c","jc--c"])},[a("div",{class:e([`${s}__content`])},[a("div",{class:e([`${s}__main`])},[n(o.$slots,"title",{},void 0,!0)],2)],2)],2))}}),f=_(i,[["__scopeId","data-v-d9228032"]]);export{f as default};
