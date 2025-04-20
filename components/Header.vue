@@ -1,13 +1,8 @@
 <script setup lang="ts">
 const cssPrefix = 'bs-header';
-
 const timeDivider1 = ref(null);
 const timeDivider2 = ref(null);
-
 const time = ref({ hour: '00', minutes: '00', seconds: '00' });
-
-
-
 const { $gsap } = useNuxtApp();
 
 function getFormattedTime() {
