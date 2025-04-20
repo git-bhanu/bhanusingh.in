@@ -50,7 +50,7 @@ onMounted(() => {
       font-size: $font-size-small;
       background: linear-gradient(
               to left,
-              rgb(255, 255, 255) 50%,
+              rgb(221, 221, 221) 50%,
               rgb(0, 0, 0) 50%
       );
       background-size: 200% 100%;
