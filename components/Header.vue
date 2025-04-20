@@ -15,7 +15,8 @@ function getFormattedTime() {
   const options = {
     timeZone: 'Asia/Kolkata',
   };
-  let hour = (now).toLocaleString([], { ...options, hour: 'numeric' });
+
+  let hour = (now).toLocaleString([], { ...options, hour: 'numeric', hour12: false });
   let minutes = (now).toLocaleString([], { ...options, minute: 'numeric' });
   let seconds = (now).toLocaleString([], { ...options, second: 'numeric' });
 
